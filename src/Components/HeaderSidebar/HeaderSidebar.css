@@ -1,5 +1,6 @@
 .header-sidebar{
     padding: 10px 20px;
+    flex-shrink: 0;
 }
 
 .header-sidebar-title{
