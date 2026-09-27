@@ -1,0 +1,99 @@
+
+.contact-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-sidebar-inside{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.contact-sidebar-inside:hover{
+    background-color: var(--thirdcolor_E01_soft);
+}
+.contact-sidebar-inside.active {
+    background-color: var(--secondarycolor_E01);
+}
+.img-contact-container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contact-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.contact-avatar-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondarycolor_E01);
+    color: var(--primarycolor_E01);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50%;
+}
+.contact-msg-wrap{
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-name{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.msg-contact{
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--secondarycolor_E01)
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.date-highlights{
+    font-size: 12px;
+    color: var(--secondarycolor_E01);
+}
+
+.unread-msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+    background-color: var(--secondarycolor_E01);
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

@@ -1,0 +1,154 @@
+const ahora = new Date();
+
+function fechaEn(diasAtras, horas, minutos) {
+    const fecha = new Date(ahora);
+    fecha.setDate(ahora.getDate() - diasAtras);
+    fecha.setHours(horas, minutos, 0, 0);
+    return fecha;
+}
+
+const fechaHoy1 = fechaEn(0, 14, 30);   // último mensaje del hilo 1 → "14:30"
+const fechaHoy2 = fechaEn(0, 8, 21);    // último mensaje del hilo 2 → "08:21"
+const fechaAyer = fechaEn(1, 12, 15);   // último mensaje del hilo 3 → "Ayer"
+const fechaLejana = fechaEn(5, 9, 35);  // hilos 4 y 5 → fecha antigua
+
+export const MOCK_MESSAGES = {
+    1: [
+        {
+            id: 1,
+            text: "Buenas ¿hacemos un asado el sábado?",
+            author: "Sofi P",
+            isOutgoing: false,
+            created_at: fechaEn(1, 14, 5).toISOString(),
+            status: "seen",
+        },
+        {
+            id: 2,
+            text: "Dale, re toy",
+            author: "YO",
+            isOutgoing: true,
+            created_at: fechaEn(1, 14, 12).toISOString(),
+            status: "seen",
+        },
+        {
+            id: 3,
+            text: "Te compras unas birras?",
+            author: "Sofi P",
+            isOutgoing: false,
+            created_at: fechaEn(1, 14, 20).toISOString(),
+            status: "seen",
+        },
+        {
+            id: 4,
+            text: "Yo me encargo de la comida",
+            author: "Sofi P",
+            isOutgoing: false,
+            created_at: fechaEn(1, 14, 22).toISOString(),
+            status: "unseen",
+        },
+        {
+            id: 5,
+            text: "Perfekt. Compro birras y soda",
+            author: "YO",
+            isOutgoing: true,
+            created_at: fechaHoy1.toISOString(),
+            status: "unseen",
+        },
+    ],
+    2: [
+        {
+            id: 1,
+            text: "¿en qué andás?",
+            author: "YO",
+            isOutgoing: true,
+            created_at: fechaEn(0, 8, 10).toISOString(),
+            status: "seen",
+        },
+        {
+            id: 2,
+            text: "tomando un café, mientras pruebo el celu",
+            author: "Susanta Thenon",
+            isOutgoing: false,
+            created_at: fechaEn(0, 8, 15).toISOString(),
+            status: "unseen",
+        },
+        {
+            id: 3,
+            text: "¿Se ve bien la foto?",
+            author: "Susanta Thenon",
+            isOutgoing: false,
+            created_at: fechaEn(0, 8, 18).toISOString(),
+            status: "unseen",
+        },
+        {
+            id: 4,
+            text: "Testeando... 1, 2, 3, probando si funciona esto",
+            author: "Susanta Thenon",
+            isOutgoing: false,
+            created_at: fechaHoy2.toISOString(),
+            status: "unseen",
+        },
+    ],
+    3: [
+        {
+            id: 1,
+            text: "¡Hola Edgar! ¿Cómo andás?",
+            author: "YO",
+            isOutgoing: true,
+            created_at: fechaEn(1, 12, 0).toISOString(),
+            status: "seen",
+        },
+        {
+            id: 2,
+            text: "Todo bien por acá",
+            author: "Edgar P",
+            isOutgoing: false,
+            created_at: fechaEn(1, 12, 5).toISOString(),
+            status: "seen",
+        },
+        {
+            id: 3,
+            text: "Holaaaaaaa queridoooo tanto tiempo",
+            author: "Edgar P",
+            isOutgoing: false,
+            created_at: fechaAyer.toISOString(),
+            status: "unseen",
+        },
+    ],
+    4: [
+        {
+            id: 1,
+            text: "¿Vamos a la marcha el viernes?",
+            author: "YO",
+            isOutgoing: true,
+            created_at: fechaEn(5, 9, 30).toISOString(),
+            status: "seen",
+        },
+        {
+            id: 2,
+            text: "Genial, vamos juntos!",
+            author: "Walt Whitman",
+            isOutgoing: false,
+            created_at: fechaLejana.toISOString(),
+            status: "seen",
+        },
+    ],
+    5: [
+        {
+            id: 1,
+            text: "¿Vamos a la marcha el viernes?",
+            author: "YO",
+            isOutgoing: true,
+            created_at: fechaEn(5, 9, 30).toISOString(),
+            status: "seen",
+        },
+        {
+            id: 2,
+            text: "Genial, vamos juntos!",
+            author: "Clarice Lispector",
+            isOutgoing: false,
+            created_at: fechaLejana.toISOString(),
+            status: "seen",
+        },
+    ],
+};

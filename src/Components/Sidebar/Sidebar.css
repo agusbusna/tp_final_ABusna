@@ -1,0 +1,102 @@
+.sidebar-logo {
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+
+.sidebar-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.sidebar-search-input-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--thirdcolor_E01_soft);
+    border: 2px solid var(--secondarycolor_E01);
+    border-radius: 24px;
+    padding: 10px 18px;
+    width: 100%;
+    
+}
+
+.sidebar-search-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.sidebar-search-clear {
+    border: none;
+    background-color: transparent;
+    color: var(--secondarycolor_E01);
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+.sidebar-search-clear:hover{
+    background-color: var(--thirdcolor_E01_soft);
+    border-radius: 50%;
+    
+}
+
+
+.sidebar-filters {
+    border-radius: 50px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.sidebar-filter {
+    border-radius: 50px;
+    padding: 2px 10px;
+    gap: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.sidebar-filter:hover{
+    background-color: var(--thirdcolor_E01_soft);
+}
+.sidebar-filter--active {
+    background-color: var(--thirdcolor_E01);
+}
+
+.sidebar-empty {
+    display: block;
+    text-align: center;
+    color: var(--secondarycolor_E01);
+    padding: 24px 16px;
+    font-size: 14px;
+}
+
+.link-contact {
+    text-decoration: none;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+}
+
+.sidebar-contact-list{
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    scrollbar-width: thin;
+    gap: 5px;
+}

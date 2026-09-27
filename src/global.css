@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: 'FOT-Matisse Pro EB';
+    src: url('./assets/fonts/FOT-Matisse\ Pro\ EB.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-family: 'FOT-Matisse Pro EB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --primarycolor_E01:#1D0832; 
+    --secondarycolor_E01: #87F65A;
+    --thirdcolor_E01: #8D4DC1;
+    --thirdcolor_E01_soft: #8D4DC180;
+    --detailcolor_E01: #AE442E;
+    --primarycolor_E00: #506CC0;
+    --secondarycolor_E00: #F8FFFF;
+    --primarycolor_E02: #88000A;
+    --secondarycolor_E02: #EB8111;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family)
+}
+
+
+.body{
+    font-family: var(--font-family);
+}
+.home-screen{
+    background-color: var(--primarycolor_E01);
+}
