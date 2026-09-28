@@ -7,10 +7,10 @@ function fechaEn(diasAtras, horas, minutos) {
     return fecha;
 }
 
-const fechaHoy1 = fechaEn(0, 14, 30);   // último mensaje del hilo 1 → "14:30"
-const fechaHoy2 = fechaEn(0, 8, 21);    // último mensaje del hilo 2 → "08:21"
-const fechaAyer = fechaEn(1, 12, 15);   // último mensaje del hilo 3 → "Ayer"
-const fechaLejana = fechaEn(5, 9, 35);  // hilos 4 y 5 → fecha antigua
+const fechaHoy1 = fechaEn(0, 14, 30);   
+const fechaHoy2 = fechaEn(0, 8, 21);    
+const fechaAyer = fechaEn(1, 12, 15);   
+const fechaLejana = fechaEn(5, 9, 35);  
 
 export const MOCK_MESSAGES = {
     1: [
