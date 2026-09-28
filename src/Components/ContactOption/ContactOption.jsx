@@ -36,7 +36,7 @@ export default function ContactOption({ imagen, id, nombre, ultimo_mensaje, fech
                     <p className="msg-contact">{ultimo_mensaje}</p>
                 </div>
                 <div className="contact-info">
-                    <span className={mensajes_sin_leer > 0 ? "date-highlights" : undefined}>{formatearFechaSidebar(fecha_ultimo_mensaje)}</span>
+                    <span className={mensajes_sin_leer > 0 ? "date-highlights" : "date-info"}>{formatearFechaSidebar(fecha_ultimo_mensaje)}</span>
                     {mensajes_sin_leer !== null && (
                         <span className="unread-msg">{mensajes_sin_leer}</span>
                     )}

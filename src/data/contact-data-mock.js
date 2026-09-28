@@ -29,36 +29,187 @@ const base_contacts = [
     { 
         id: 2,
         type: "contact", 
-        name: 'Susanta Thenon', 
+        name: 'Julia Dorothea', 
         last_connection: 'hoy 08:21',      
-        image: 'https://www.cultura.gob.ar/media/uploads/d_pi3w4uiawsxov.jpg' 
+        image: '/fotos/contact2.jpg' 
     },
     { 
         id: 3,
         type: "contact", 
-        name: 'Edgar P',        
+        name: 'Federico Falco',        
         last_connection: 'ayer 12:15',     
-        image: 'https://cdn.zendalibros.com/wp-content/uploads/2018/01/el-cuervo-poe-e1516083315209.jpg' 
+        image: '/fotos/contact3.jpg' 
     },
     { 
         id: 4,
         type: "contact", 
-        name: 'Walt Whitman',   
+        name: 'Marta A',   
         last_connection: 'hace unos días', 
-        image: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Walt_Whitman_-_George_Collins_Cox.jpg/960px-Walt_Whitman_-_George_Collins_Cox.jpg?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail' 
+        image: '/fotos/contact4.jpg' 
     },
     { 
         id: 5,
         type: "contact", 
-        name: 'Clarice Lispector', 
+        name: 'Ludmila Brenstein', 
         last_connection: 'hace unos días', 
-        image: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/%281920-1977%29_Clarice_Lispector_6zxkp_please_credit%28palette.fm%29_%28cropped%29.png?utm_source=es.wikipedia.org&utm_campaign=imageinfo&utm_content=original' 
+        image: '/fotos/contact5.jpg' 
     },
     {
         name: "Familia",
         id: 6,
-        type: "group"
-    }
+        type: "group",
+        last_connection: "hace unos días",
+        image: "/fotos/contact6.svg" 
+    },
+    { 
+        id: 7,
+        type: "contact", 
+        name: 'N. Simone', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact7.jpg' 
+    },
+    { 
+        id: 8,
+        type: "contact", 
+        name: 'Jose Schwarz', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact8.jpg' 
+    },
+    { 
+        id: 9,
+        type: "contact", 
+        name: 'Esteban J', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact9.jpg' 
+    },
+    { 
+        id: 10,
+        type: "contact", 
+        name: 'Juan K.', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact10.jpg' 
+    },
+    { 
+        id: 11,
+        type: "contact", 
+        name: 'M. Rosenberg', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact11.jpg' 
+    },
+    { 
+        id: 12,
+        type: "contact", 
+        name: 'Jean L. G.', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact12.jpg' 
+    },
+    { 
+        id: 13,
+        type: "contact", 
+        name: 'H. Farocki', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact13.jpg' 
+    },
+    { 
+        id: 14,
+        type: "contact", 
+        name: 'Diana Pérez', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact14.jpg' 
+    },
+    { 
+        id: 15,
+        type: "contact", 
+        name: 'Mia Fatore', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact15.jpg' 
+    },
+    { 
+        id: 16,
+        type: "contact", 
+        name: 'Vir Hussey', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact16.jpg' 
+    },
+    { 
+        id: 17,
+        type: "contact", 
+        name: 'Mario Paz', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact17.jpg' 
+    },
+    { 
+        id: 18,
+        type: "contact", 
+        name: 'Luciano Pareto', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact18.jpg' 
+    },
+    { 
+        id: 19,
+        type: "contact", 
+        name: 'Hito', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact19.jpg' 
+    },
+    { 
+        id: 20,
+        type: "contact", 
+        name: 'Jose B', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact20.jpg' 
+    },
+    { 
+        id: 21,
+        type: "contact", 
+        name: 'Gera Soto', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact21.jpg' 
+    },
+    { 
+        id: 22,
+        type: "contact", 
+        name: 'Fia Loredo', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact22.jpg' 
+    },
+    { 
+        id: 23,
+        type: "contact", 
+        name: 'Nati Lima', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact23.jpg' 
+    },
+    { 
+        id: 24,
+        type: "contact", 
+        name: 'Tomi R', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact24.jpg' 
+    },
+    { 
+        id: 25,
+        type: "group", 
+        name: 'Qatar2022', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact25.jpg' 
+    },
+    { 
+        id: 26,
+        type: "contact", 
+        name: 'Elina Alonso ', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact26.jpg' 
+    },
+    { 
+        id: 27,
+        type: "contact", 
+        name: 'Delma Otero', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact27.jpg' 
+    },
+
+
 ];
 
 const contact_list_server = base_contacts.map((contacto) => ({

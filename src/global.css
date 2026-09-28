@@ -1,48 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {
-    font-family: 'FOT-Matisse Pro EB';
-    src: url('./assets/fonts/FOT-Matisse\ Pro\ EB.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
-/*
- * Tokens de color semánticos.
- * El valor de cada token se redefine según el tema activo
- * (atributo data-theme en <html>), seteado por ThemeContext.
- */
 :root {
-    --font-family: 'FOT-Matisse Pro EB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-    /* Fallback = Eva01, por si data-theme aún no se aplicó */
-    --bg: #1D0832;
-    --surface: #8D4DC180;
-    --surface-solid: #8D4DC1;
-    --accent: #87F65A;
+    --font-family: "Roboto", sans-serif;
+    --bg: #161717;
+    --bg-secondary: #1D1F1F;
+    --bg-dark: #103529;
+    --surface: #2E2F2F;
+    --surface-solid: #2E2F2F;
+    --accent: #25D366;
     --accent-contrast: #000000;
     --detail: #AE442E;
-    --text: #FFFFFF;
-    --chat-bg: #0b141a;
-    --chat-text: #FFFFFF;
+    --text: #FAFAFA;
+    --chat-bg: #FFFFFF99;
+    --chat-text: #FAFAFA;
     --chat-text_in: #5E62EA;
 }
 
-/* ---------- Eva01: morado / verde ---------- */
+
 [data-theme="Eva01"] {
-    --bg: #1D0832;
-    --surface: #8D4DC180;
-    --surface-solid: #8D4DC1;
-    --accent: #87F65A;
+    --bg: #161717;
+    --bg-secondary: #1D1F1F;
+    --surface: #2E2F2F;
+    --surface-solid: #2E2F2F;
+    --accent: #25D366;
     --accent-contrast: #000000;
     --detail: #AE442E;
     --text: #FFFFFF;
-    --chat-bg: #0b141a;
-    --chat-text: #FFFFFF;
+    --chat-bg: #FFFFFF99;
+    --chat-text: #FAFAFA;
     --chat-text_in: #5E62EA;
 }
 
-/* ---------- Eva02: rojo / naranja ---------- */
+
 [data-theme="Eva02"] {
     --bg: #88000A;
     --surface: #C4441E80;
@@ -79,10 +69,11 @@
 }
 
 
-.body{
+.body {
     font-family: var(--font-family);
 }
-.home-screen{
+
+.home-screen {
     background-color: var(--bg);
     transition: background-color 0.3s ease;
 }

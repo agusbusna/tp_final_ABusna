@@ -4,7 +4,6 @@
     gap: 12px;
     padding: 6px 6px 14px;
     flex-shrink: 0;
-    border-bottom: 1px solid color-mix(in srgb, var(--detail) 50%, transparent);
     cursor: pointer;
 }
 

@@ -58,7 +58,7 @@
 .contact-name{
     text-decoration: none;
     color: var(--text);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
     overflow: hidden;
@@ -66,11 +66,11 @@
 }
 
 .msg-contact{
-    font-size: 13px;
+    font-size: 14px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--accent)
+    color: var(--chat-bg)
 }
 
 .contact-info{
@@ -85,6 +85,10 @@
     color: var(--accent);
 }
 
+.date-info{
+    font-size: 12px;
+    color: var(--chat-bg);
+}
 .unread-msg{
     display: flex;
     align-items: center;
