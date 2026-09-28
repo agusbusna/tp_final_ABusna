@@ -1,7 +1,14 @@
 import "./ContactOption.css"
 import { formatearFechaSidebar } from "../../utils/formatDate"
+import { useContext } from "react"
+import { ContactContext } from "../../Context/ContactContext"
 
-export default function ContactOption({ imagen, nombre, ultimo_mensaje, fecha_ultimo_mensaje, mensajes_sin_leer }) {
+
+export default function ContactOption({ imagen, id, nombre, ultimo_mensaje, fecha_ultimo_mensaje, mensajes_sin_leer }) {
+    
+    const {contact_id} = useContext(ContactContext)
+    const isOpen = Number(contact_id) === id
+
     function getInitials(nombre) {
         if (!nombre) return "?"
         const palabras = nombre.trim().split(" ")
@@ -14,7 +21,7 @@ export default function ContactOption({ imagen, nombre, ultimo_mensaje, fecha_ul
 
     return (
         <div className="contact-sidebar">
-            <div className="contact-sidebar-inside">
+            <div className={"contact-sidebar-inside" + (isOpen ? " active" : "")}>
                 <div className='img-contact-container'>
                     {imagen ? (
                         <img src={imagen} alt={nombre} className='contact-image' />

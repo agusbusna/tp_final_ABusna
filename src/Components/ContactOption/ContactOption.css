@@ -14,10 +14,10 @@
     transition: background-color 0.2s ease;
 }
 .contact-sidebar-inside:hover{
-    background-color: var(--thirdcolor_E01_soft);
+    background-color: var(--surface);
 }
 .contact-sidebar-inside.active {
-    background-color: var(--secondarycolor_E01);
+    background-color: var(--surface-solid);
 }
 .img-contact-container{
     width: 50px;
@@ -44,8 +44,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondarycolor_E01);
-    color: var(--primarycolor_E01);
+    background-color: var(--accent);
+    color: var(--bg);
     font-size: 18px;
     font-weight: 700;
     border-radius: 50%;
@@ -57,6 +57,7 @@
 
 .contact-name{
     text-decoration: none;
+    color: var(--text);
     font-size: 14px;
     font-weight: 600;
     white-space: nowrap;
@@ -69,7 +70,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--secondarycolor_E01)
+    color: var(--accent)
 }
 
 .contact-info{
@@ -81,7 +82,7 @@
 
 .date-highlights{
     font-size: 12px;
-    color: var(--secondarycolor_E01);
+    color: var(--accent);
 }
 
 .unread-msg{
@@ -89,8 +90,8 @@
     align-items: center;
     justify-content: center;
     padding: 0 6px;
-    background-color: var(--secondarycolor_E01);
-    color: #000;
+    background-color: var(--accent);
+    color: var(--accent-contrast);
     font-size: 11px;
     font-weight: 700;
     min-width: 20px;

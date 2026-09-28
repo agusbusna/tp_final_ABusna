@@ -52,7 +52,7 @@ export default function Sidebar() {
                         aria-hidden="true"
                     >
                         <path
-                            fill="#87F65A"
+                            fill="currentColor"
                             d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"
                         />
                     </svg>
@@ -128,8 +128,6 @@ export default function Sidebar() {
                         nombre={contacto.name}
                         mensajes_sin_leer={contacto.unread_messages}
                         fecha_ultimo_mensaje={formatearFechaSidebar(contacto.last_message_time)}
-                        key={contacto.id}
-                        className="card-contact"
                     />
                 </Link>
                 )

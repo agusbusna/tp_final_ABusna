@@ -40,3 +40,15 @@ export function formatearFechaSidebar(fechaMensaje) {
 }
 
 export default formatearFechaSidebar;
+
+export function formatearHora (fecha) {
+    if (!fecha)
+        return "";
+    const fechaDate = fecha instanceof Date ? fecha : new Date (fecha);
+    if (isNaN (fechaDate.getTime())) 
+        return "";
+    const horas = String(fechaDate.getHours()).padStart(2, "0");
+    const minutos = String(fechaDate.getMinutes()).padStart(2, "0");
+
+    return `${horas}:${minutos}`;
+}

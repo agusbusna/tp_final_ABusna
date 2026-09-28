@@ -11,13 +11,18 @@
     padding: 0 10px;
 }
 
+.sidebar-search-icon{
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
 .sidebar-search-input-wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    background-color: var(--thirdcolor_E01_soft);
-    border: 2px solid var(--secondarycolor_E01);
+    background-color: var(--surface);
+    border: 2px solid var(--accent);
     border-radius: 24px;
     padding: 10px 18px;
     width: 100%;
@@ -29,7 +34,7 @@
     border: none;
     outline: none;
     width: 100%;
-    color: white;
+    color: var(--text);
     font-size: 13px;
     font-weight: 300;
 }
@@ -37,14 +42,14 @@
 .sidebar-search-clear {
     border: none;
     background-color: transparent;
-    color: var(--secondarycolor_E01);
+    color: var(--accent);
     cursor: pointer;
     width: 22px;
     height: 22px;
     flex-shrink: 0;
 }
 .sidebar-search-clear:hover{
-    background-color: var(--thirdcolor_E01_soft);
+    background-color: var(--surface);
     border-radius: 50%;
     
 }
@@ -61,22 +66,22 @@
     padding: 2px 10px;
     gap: 10px;
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
+    color: var(--text);
+    border: 1px solid var(--text);
     cursor: pointer;
 }
 
 .sidebar-filter:hover{
-    background-color: var(--thirdcolor_E01_soft);
+    background-color: var(--surface);
 }
 .sidebar-filter--active {
-    background-color: var(--thirdcolor_E01);
+    background-color: var(--surface-solid);
 }
 
 .sidebar-empty {
     display: block;
     text-align: center;
-    color: var(--secondarycolor_E01);
+    color: var(--accent);
     padding: 24px 16px;
     font-size: 14px;
 }

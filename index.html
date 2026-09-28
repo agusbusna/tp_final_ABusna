@@ -5,6 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tp-final</title>
+    <script>
+      // Aplica el tema guardado antes de pintar, para evitar un destello del tema por defecto.
+      // Debe mantenerse en sincronía con THEMES en src/Context/ThemeContext.jsx
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "Eva01" || t === "Eva02" || t === "Eva00") {
+          document.documentElement.setAttribute("data-theme", t);
+        }
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

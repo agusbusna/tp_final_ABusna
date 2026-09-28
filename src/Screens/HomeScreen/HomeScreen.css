@@ -17,7 +17,7 @@
 }
 
 .chat-layout-wrapper{
-    border-left: 1px solid  ;
+    border-left: 1px solid var(--detail);
     border-radius: 10px;
     display: flex;
     flex: 1;
@@ -30,18 +30,17 @@
     flex: 0 0 clamp(320px, 35%, 600px);
     height: 100vh;
     overflow: hidden;
-    /* padding: 10px; */
-    border-left: 1px solid  color-mix(in srgb, var(--detailcolor_E01) 50%, transparent);
-    border-right: 1px solid  color-mix(in srgb, var(--detailcolor_E01) 50%, transparent);
+    border-left: 1px solid  color-mix(in srgb, var(--detail) 50%, transparent);
+    border-right: 1px solid  color-mix(in srgb, var(--detail) 50%, transparent);
 }
 
 .home-screen-chat {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: var(--chat-text);
     flex: 1;
     min-width: 0;
     height: 100%;
-    background-color: #0b141a;
+    background-color: var(--bg);
     padding: 10px;
 }

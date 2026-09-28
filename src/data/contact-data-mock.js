@@ -1,6 +1,6 @@
 import { MOCK_MESSAGES } from "./message-data-mock";
 
-function resumirHilo(mensajes) {
+export function resumirHilo(mensajes) {
     if (!mensajes || mensajes.length === 0) {
         return {
             last_message: "",

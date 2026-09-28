@@ -3,7 +3,6 @@ import HomeScreen from "./Screens/HomeScreen/HomeScreen"
 import { Navigate } from "react-router"
 import { ContactContextProvider } from './Context/ContactContext'
 import NotFoundScreen from './Screens/NotFoundScreen/NotFoundScreen'
-import { ThemeContext } from './Context/ThemeContext'
 
 
 

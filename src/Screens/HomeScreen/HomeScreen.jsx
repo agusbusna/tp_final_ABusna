@@ -1,7 +1,7 @@
 import "./HomeScreen.css"
 import Sidebar from "../../Components/Sidebar/Sidebar"
-import NoChatSelected from "../../Components/NoChatSelected/NoChatSelected"
 import NavRail from "../../Components/NavRail/NavRail"
+import ChatArea from "../../Components/ChatArea/ChatArea"
 
 
 
@@ -18,7 +18,7 @@ export default function HomeScreen() {
                         <Sidebar/>
                     </div>
                     <div className='home-screen-chat'>
-                        <NoChatSelected/>
+                        <ChatArea/>
                     </div>
                 </div>
             </div>

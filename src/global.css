@@ -7,20 +7,68 @@
     font-display: swap;
 }
 
+/*
+ * Tokens de color semánticos.
+ * El valor de cada token se redefine según el tema activo
+ * (atributo data-theme en <html>), seteado por ThemeContext.
+ */
 :root {
     --font-family: 'FOT-Matisse Pro EB', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --primarycolor_E01:#1D0832; 
-    --secondarycolor_E01: #87F65A;
-    --thirdcolor_E01: #8D4DC1;
-    --thirdcolor_E01_soft: #8D4DC180;
-    --detailcolor_E01: #AE442E;
-    --primarycolor_E00: #506CC0;
-    --secondarycolor_E00: #F8FFFF;
-    --primarycolor_E02: #88000A;
-    --secondarycolor_E02: #EB8111;
+
+    /* Fallback = Eva01, por si data-theme aún no se aplicó */
+    --bg: #1D0832;
+    --surface: #8D4DC180;
+    --surface-solid: #8D4DC1;
+    --accent: #87F65A;
+    --accent-contrast: #000000;
+    --detail: #AE442E;
+    --text: #FFFFFF;
+    --chat-bg: #0b141a;
+    --chat-text: #FFFFFF;
+    --chat-text_in: #5E62EA;
 }
 
+/* ---------- Eva01: morado / verde ---------- */
+[data-theme="Eva01"] {
+    --bg: #1D0832;
+    --surface: #8D4DC180;
+    --surface-solid: #8D4DC1;
+    --accent: #87F65A;
+    --accent-contrast: #000000;
+    --detail: #AE442E;
+    --text: #FFFFFF;
+    --chat-bg: #0b141a;
+    --chat-text: #FFFFFF;
+    --chat-text_in: #5E62EA;
+}
 
+/* ---------- Eva02: rojo / naranja ---------- */
+[data-theme="Eva02"] {
+    --bg: #88000A;
+    --surface: #C4441E80;
+    --surface-solid: #C4441E;
+    --accent: #EB8111;
+    --accent-contrast: #000000;
+    --detail: #F2C14E;
+    --text: #FFF3E6;
+    --chat-bg: #2B0A08;
+    --chat-text: #FFE9D6;
+    --chat-text_in: #5E62EA;
+}
+
+/* ---------- Eva00: azul ---------- */
+[data-theme="Eva00"] {
+    --bg: #2B3E7A;
+    --surface: #506CC059;
+    --surface-solid: #506CC0;
+    --accent: #F8FFFF;
+    --accent-contrast: #1B2A55;
+    --detail: #9FB4E8;
+    --text: #FFFFFF;
+    --chat-bg: #131A2E;
+    --chat-text: #FFFFFF;
+    --chat-text_in: #5E62EA;
+}
 
 
 * {
@@ -35,5 +83,6 @@
     font-family: var(--font-family);
 }
 .home-screen{
-    background-color: var(--primarycolor_E01);
+    background-color: var(--bg);
+    transition: background-color 0.3s ease;
 }

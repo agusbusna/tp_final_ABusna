@@ -1,10 +1,56 @@
 .header-sidebar{
     padding: 10px 20px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .header-sidebar-title{
     font-size: 22px;
     font-weight: 700;
-    color: white;
+    color: var(--text);
+}
+
+
+
+.theme-switcher{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-dot{
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid var(--detail);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.theme-dot:hover{
+    transform: scale(1.15);
+}
+
+.theme-dot:focus-visible{
+    outline: 1px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.theme-dot.is-active{
+    box-shadow: 0 0 0 1px var(--bg), 0 0 0 4px var(--accent);
+}
+
+
+.theme-dot--Eva01{
+    background: linear-gradient(135deg, #1D0832 50%, #87F65A 50%);
+}
+.theme-dot--Eva02{
+    background: linear-gradient(135deg, #88000A 50%, #EB8111 50%);
+}
+.theme-dot--Eva00{
+    background: linear-gradient(135deg, #2B3E7A 50%, #F8FFFF 50%);
 }
