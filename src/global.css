@@ -10,28 +10,29 @@
     --surface-solid: #2E2F2F;
     --accent: #25D366;
     --accent-contrast: #000000;
-    --detail: #AE442E;
+    --detail: #343636;
     --text: #FAFAFA;
     --chat-bg: #FFFFFF99;
+    --chat-bg-btn: #D9FDD3;
     --chat-text: #FAFAFA;
     --chat-text_in: #5E62EA;
 }
 
 
-[data-theme="Eva01"] {
+/* [data-theme="Eva01"] {
     --bg: #161717;
     --bg-secondary: #1D1F1F;
     --surface: #2E2F2F;
     --surface-solid: #2E2F2F;
     --accent: #25D366;
     --accent-contrast: #000000;
-    --detail: #AE442E;
+    --detail: #343636;
     --text: #FFFFFF;
     --chat-bg: #FFFFFF99;
     --chat-text: #FAFAFA;
     --chat-text_in: #5E62EA;
 }
-
+ */
 
 [data-theme="Eva02"] {
     --bg: #88000A;

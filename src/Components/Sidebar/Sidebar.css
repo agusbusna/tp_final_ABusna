@@ -1,3 +1,7 @@
+.sidebar{
+    border-left: 1px solid var(--detail);
+    border-right: 1px solid var(--detail);
+}
 .sidebar-search {
     display: flex;
     flex-direction: column;
@@ -103,5 +107,6 @@
     min-height: 0;
     overflow: auto;
     scrollbar-width: thin;
+    scrollbar-color: var(--surface) transparent;
     gap: 5px;
 }
