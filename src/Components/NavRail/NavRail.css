@@ -6,11 +6,10 @@
     height: 100vh;
     padding: 10px 12px;
     background-color: var(--bg-secondary);
+    width: 64px;
+    flex-shrink: 0;
 }
 
-.rail-btn-container{
-    
-}
 .rail-btn-container-top{
     display: flex;
     flex-direction: column;
@@ -45,8 +44,19 @@
     background: transparent;
     border: none;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
+.rail-btn:hover{
+    background-color: var(--detail);
+}
+.rail-btn.active{
+    background-color: var(--detail);
+}
+
+.rail-btn.active:hover{
+    background-color: var(--chat-bg);
+}
 .img-profil-user{
     width: 24px;
     height: 24px;

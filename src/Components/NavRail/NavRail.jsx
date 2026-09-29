@@ -5,7 +5,7 @@ export default function NavRail() {
         <div className='nav-rail-container'>
             <div className="rail-btn-container-top">
                 <div className="rail-btn-container">
-                    <button className='rail-btn'>
+                    <button className= 'rail-btn active'>
                         <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="" fill="#FAFAFA" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>wds-ic-chat-filled</title><path fill="#FAFAFA" fill-rule="evenodd" d="M22 6.67C22 5.19 20.8 4 19.33 4H1.8a1 1 0 0 0-.85 1.53L3 9v8.33C3 18.81 4.2 20 5.67 20h13.66c1.48 0 2.67-1.2 2.67-2.67V6.67ZM7 10a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Zm1 3a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H8Z" clip-rule="evenodd"></path></svg>
                     </button>
                 </div>

@@ -4,6 +4,7 @@ import { createContext, useState, useCallback, useMemo } from "react";
 import { Outlet, useParams } from "react-router";
 import { MOCK_MESSAGES } from "../data/message-data-mock";
 import { resumirHilo } from "../data/contact-data-mock";
+import useContactOrder from "../hooks/useContactOrder";
 
 
 
@@ -12,6 +13,20 @@ export const ContactContext = createContext()
 export function ContactContextProvider() {
     const [contacts, setContacts] = useState(contact_list_server)
     const [messages, setMessages] = useState(MOCK_MESSAGES)
+    const [pinnedIds, setPinneedIds] = useState([])
+
+    const togglePin = useCallback((id)=> {
+        const idFijo = Number(id)
+        setPinneedIds((prev)=>
+            prev.includes(idFijo) ? prev.filter((x) => x !== idFijo) : [...prev, idFijo]
+        )
+    }, [])
+    const sorted_contacts = useContactOrder({
+        contacts: contacts,
+        setContacts,
+        messages: messages,
+        pinnedIds: pinnedIds
+    })
 
     const { contact_id } = useParams()
 
@@ -24,11 +39,11 @@ export function ContactContextProvider() {
     }
 
     const contacts_resumidos = useMemo(()=> {
-        return contacts.map((contacto) => ({
+        return sorted_contacts.map((contacto) => ({
             ...contacto,
             ...resumirHilo(messages[contacto.id])
         }))
-    }, [contacts, messages])
+    }, [sorted_contacts, messages])
 
     const getMessagesByContact = useCallback((id)=> {
         if (id === undefined || id === null) return []
@@ -82,6 +97,8 @@ export function ContactContextProvider() {
     const provider_values = {
         contacts: contacts_resumidos,
         setContacts: setContacts,
+        pinnedIds: pinnedIds,
+        togglePin: togglePin,
         contact_id: contact_id,
         contacto_seleccionado: contacto_seleccionado,
         selected_contact: contacto_seleccionado,

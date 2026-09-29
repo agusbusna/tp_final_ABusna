@@ -26,10 +26,12 @@
 .home-screen-sidebar {
     display: flex;
     flex-direction: column;
-    flex: 0 0 clamp(320px, 35%, 600px);
-    height: 100vh;
     overflow: hidden;
-}
+    flex: 0 1 30%;
+    min-width: 340px;
+    max-width: 600px;
+    height: 100vh;
+} 
 
 .home-screen-chat {
     display: flex;

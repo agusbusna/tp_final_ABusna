@@ -7,7 +7,8 @@
     gap: 10px;
     text-align: center;
     color: var(--chat-text);
-}
+} 
+
 
 .chat-empty-card{
     display: flex;
