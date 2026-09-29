@@ -1,41 +1,72 @@
 .message{
-    max-width: 68%;
-    display: flex;
+    position: relative;
+    max-width: 65%;
     flex-direction: column;
-   /*  gap: 4px; */
-    padding: 8px 12px;
+    padding: 6px 7px 8px 9px;
     font-size: 14px;
-    line-height: 1.35;
+    line-height: 19px;
+    border-radius: 7.5px;
+    box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13); 
+}
+
+.message::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .message--out{
     align-self: flex-end;
-    background-color: var(--surface-solid);
+    background-color: var(--chat-bg-out);
     color: var(--text);
-    border-radius: 8px;
 }
 
 .message--in{
     align-self: flex-start;
-    background-color: var(--chat-text_in);
+    background-color: var(--chat-bg-in);
     color: var(--text);
-    border-radius: 8px;
 }
 
 .message-text{
+    white-space: pre-wrap;
     word-break: break-word;
 }
 
 .message-meta{
-    display: flex;
+    float: right;
+    display: inline-flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
+    position: relative;
+    gap: 3px;
+    margin: 5px 0 -2px 8px;
     font-size: 11px;
-    opacity: 0.5;
+    line-height: 15px;
+    color: var(--chat-bg);
+    opacity: 0.6;
 }
 
 .message-status.is-seen{
     color: var(--accent);
     opacity: 1;
 }
+
+.message--first::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 8px;
+    height: 13px;
+}
+
+.message--in.message--first::before{
+    left: -8px;
+    background-color: var(--chat-bg-in);
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+}
+
+.message--out.message--first::before{
+    right: -8px;
+    background-color: var(--chat-bg-out);
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+

@@ -52,3 +52,26 @@ export function formatearHora (fecha) {
 
     return `${horas}:${minutos}`;
 }
+
+function soloFecha(d) {
+    return new Date(d.getFullYear(), d.getMonth(), d.getDate())
+}
+
+export function claveDia(iso){
+    const f = new Date(iso)
+    return `${f.getFullYear()}-${String(f.getMonth() + 1).padStart(2, "0")}-${String(f.getDate()).padStart(2, "0")}`
+}
+
+export function etiquetaDia(iso) {
+    const fecha = soloFecha(new Date(iso))
+    const hoy = soloFecha(new Date())
+    const dias = Math.round((hoy - fecha)/ 86400000)
+
+    if (dias <= 0) return "hoy"
+    if (dias === 1) return "ayer"
+    if (dias < 7) return new Intl.DateTimeFormat ("es-Ar", { weekday: "long"}).format(fecha)
+
+    const dd = String(fecha.getDate()).padStart(2, "0")
+    const mm = String(fecha.getMonth() + 1).padStart(2,"0")
+    return `${dd}/${mm}/${fecha.getFullYear()}`
+}

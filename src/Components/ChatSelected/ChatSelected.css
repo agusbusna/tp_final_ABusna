@@ -1,10 +1,26 @@
 .chat-selected{
+    position: relative;
     flex: 1;
     min-height: 0;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg);
+    overflow: hidden;
 }
 
+.chat-selected::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/bg_wp_pattern_transparent.png");
+    opacity: 0.4;                   
+    pointer-events: none;
+}
+
+.chat-selected > * {
+    position: relative;
+    z-index: 1;
+}
 .chat-messages{
     display: flex;
     flex-direction: column;
@@ -12,7 +28,33 @@
     min-height: 0;
     overflow-y: auto;
     gap: 4px;
-    padding: 12px 6px;
+    padding: 12px 5% 6px;
     scrollbar-width: thin;
-    background-image: url("/fotos/bg_wp_dark.jpg");
+    scrollbar-color: var(--surface) transparent;
+    
+}
+
+.day-group{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.day-separator {
+    position: sticky;
+    top: 6px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 6px;
+    pointer-events: none;
+}
+
+.day-separator-pill{
+    background-color: var(--bg-secondary);
+    color: var(--chat-bg);
+    font-size: 12.5px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 0.5px rgba(11, 20, 26, 0.13);
 }
