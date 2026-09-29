@@ -36,7 +36,7 @@ const base_contacts = [
     { 
         id: 3,
         type: "contact", 
-        name: 'Federico Falco',        
+        name: 'R. Bolaño',        
         last_connection: 'ayer 12:15',     
         image: '/fotos/contact3.jpg' 
     },
@@ -207,6 +207,13 @@ const base_contacts = [
         name: 'Delma Otero', 
         last_connection: 'hace unos días', 
         image: '/fotos/contact27.jpg' 
+    },
+    { 
+        id: 28,
+        type: "contact", 
+        name: 'Yo (Tú)', 
+        last_connection: 'hace unos días', 
+        image: '/fotos/contact00_me.jpeg' 
     },
 
 
